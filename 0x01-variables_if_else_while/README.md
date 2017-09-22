@@ -1,0 +1,1 @@
+This project is about writing basic C programs with the Betty style.
