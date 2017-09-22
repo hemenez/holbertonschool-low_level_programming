@@ -1,0 +1,1 @@
+This project is focused on writing basic scripts and programs in C.
