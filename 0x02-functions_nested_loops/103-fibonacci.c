@@ -7,7 +7,10 @@
 
 int main(void)
 {
-	long a, b, c, sum;
+	long a;
+	long b;
+	long c;
+	long sum;
 	int count;
 
 	a = 1;
@@ -18,7 +21,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		if (sum % 2 == 0)
+		if (c % 2 == 0)
 			sum = sum + c;
 	}
 	printf("%lu\n", sum);
