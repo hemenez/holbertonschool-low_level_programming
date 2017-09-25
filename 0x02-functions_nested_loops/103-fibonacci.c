@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 /**
  * main - function will print Fibonacci sequence of even-valued terms
@@ -6,27 +7,20 @@
 
 int main(void)
 {
-	long a, b, c, count, sum;
+	long a, b, c, sum;
+	int count;
 
 	a = 1;
 	b = 2;
-	c = a + b;
-
+	sum = 2;
+	for (count = 0; count <= 29; count++)
 	{
-		for (count = 0; count < 30; count++)
-		{
-			c = a + b;
-			a = b;
-			b = c;
-			{
-				sum = 2;
-				if (sum % 2 == 0)
-					sum = sum + c;
-			}
-		}
-		printf("%lu\n", sum);
-
+		c = a + b;
+		a = b;
+		b = c;
+		if (sum % 2 == 0)
+			sum = sum + c;
 	}
+	printf("%lu\n", sum);
 	return (0);
-
 }
