@@ -9,8 +9,8 @@ void print_number(int n)
 {
 	int divisor;
 	int count;
-	unsigned val;
-	unsigned num;
+	unsigned int val;
+	unsigned int num;
 
 	divisor = 1;
 	num = n;
