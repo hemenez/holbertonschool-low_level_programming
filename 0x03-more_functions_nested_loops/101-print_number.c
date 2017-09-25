@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
 * print_number - function will print numbers no matter their value
 * @n: represents value given to us in main function
@@ -7,29 +8,32 @@
 void print_number(int n)
 {
 	int divisor;
-	int num;
 	int count;
+	unsigned val;
+	unsigned num;
 
-	num = n;
 	divisor = 1;
+	num = n;
 
 	if (n < 0)
 	{
-		n = -n;
-		num = -num;
+		num = -n;
+		val = num;
 		_putchar('-');
 	}
-	for (count = 0; n / 10 > 0; count++)
+	else
+		val = num;
+	for (count = 0; num / 10 > 0; count++)
 	{
-		n = n / 10;
+		num = num / 10;
 		divisor = divisor * 10;
 	}
 	while (count > 0)
 	{
-		_putchar(num / divisor + '0');
-		num = num % divisor;
+		_putchar(val / divisor + '0');
+		val = val % divisor;
 		divisor = divisor / 10;
 		--count;
 	}
-	_putchar(num + '0');
+	_putchar(val + '0');
 }
