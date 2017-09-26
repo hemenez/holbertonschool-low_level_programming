@@ -7,6 +7,9 @@
 
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	int c; /** Will act as a placeholder for a value */
+
+	c = *a; /** Temporarily holds value for a when switched */
+	*a = *b;
+	*b = c;
 }
