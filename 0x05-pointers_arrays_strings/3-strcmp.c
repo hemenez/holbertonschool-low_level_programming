@@ -14,9 +14,9 @@ int _strcmp(char *s1, char *s2)
 	a = 0;
 	diff = s1[a] - s2[a];
 
-	if (s1[a] == s2[a])
+	if (*s1 < *s2)
 		return (diff);
-	else if (s1[a] < s2[a])
+	else if (*s1 > *s2)
 		return (diff);
 	else
 		return (diff);
