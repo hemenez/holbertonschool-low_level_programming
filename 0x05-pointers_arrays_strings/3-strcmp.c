@@ -15,9 +15,21 @@ int _strcmp(char *s1, char *s2)
 	diff = s1[a] - s2[a];
 
 	if (*s1 < *s2)
+	{
+		s1++;
+		s2++;
 		return (diff);
+	}
 	else if (*s1 > *s2)
+	{
+		s1++;
+		s2++;
 		return (diff);
+	}
 	else
+	{
+		s1++;
+		s2++;
 		return (diff);
+	}
 }
