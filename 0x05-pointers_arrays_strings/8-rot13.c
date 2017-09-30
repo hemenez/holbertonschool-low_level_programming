@@ -1,29 +1,42 @@
 #include "holberton.h"
 /**
- *
- *
+ * *rot13 - function will encode a string using rot13 encryption
+ * @x: represents string fed from main function
+ * Return: function will return encrypted string to main function
  */
 
-char *rot13(char *str)
+char *rot13(char *x)
 {
-	int index;
-	int count;
-	char first[]= {97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77};
-	char second[] = {110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90};
 
-	index = 0;
-	while (str[index] != '\0')
+	char f[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+		    'L', 'M', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+		    'j', 'k', 'l', 'm'};
+	char s[] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+		    'Y', 'Z', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+		    'w', 'x', 'y', 'z'};
+	int i;
+	int c;
+
+	i = 0;
+	while (x[i] != '\0')
 	{
-		count = 0;
-		while (first[count] != '\0')
+		c = 0;
+		while (f[c] != '\0' || s[c] != '\0')
 		{
-			if (str[index] == first[count])
-				str[index] = second[count];
-			else
-				str[index] = first[count];
-			count++;
+			if (x[i] == f[c])
+			{
+				x[i] = s[c];
+			}
+			else if (x[i] == s[c])
+			{
+				x[i] = f[c];
+			}
+			c++;
 		}
-	index++;
+		i++;
 	}
-	return (str);
+	return (x);
+
+
+
 }
