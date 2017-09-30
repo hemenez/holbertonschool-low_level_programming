@@ -9,7 +9,7 @@ char *cap_string(char *str)
 {
 	int index;
 	int count;
-	char arr[] = {32, 9, 44, 59, 46, 33, 43, 34, 40, 41, 123, 125};
+	char arr[] = {32, '\n', 9, 44, 59, 46, 33, '?', 34, 40, 41, 123, 125};
 
 	index = 0;
 	while (str[index] != '\0')
