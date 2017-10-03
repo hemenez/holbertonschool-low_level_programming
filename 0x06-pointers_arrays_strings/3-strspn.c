@@ -3,7 +3,7 @@
  * _strspn - function will get length of prefix substring
  * @s: represents string fed from  main
  * @accept: represents string that scans
- * Return: function will return count on success and -1 on failure
+ * Return: function will return count on success
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -36,5 +36,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		i++;
 	}
-	return (-1);
+	return (count);
 }
