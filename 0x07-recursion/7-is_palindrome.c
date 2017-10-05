@@ -48,6 +48,6 @@ int is_palindrome(char *s)
 	if (length == 0) /** if string is empty */
 		return (1);
 	if (hold == 1) /** if string is actually palindrome */
-			return (1);
+		return (1);
 	return (0);
 }
