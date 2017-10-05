@@ -9,7 +9,7 @@
 
 int helper_4_palindrome(char *s, int beg, int length)
 {
-	if (beg == length || beg > length)
+	if (s[beg] == s[length] || s[beg] > s[length])
 		return (1);
 	if (s[beg] != s[length])
 		return (0);
