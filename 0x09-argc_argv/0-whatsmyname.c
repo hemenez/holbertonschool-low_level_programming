@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
- *
- *
- *
+ * main - function will print program's name
+ * @argc: represents argument counter
+ * @argv: represents array containing command line args
+ * Return: function will return 0 when compiled properly
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
