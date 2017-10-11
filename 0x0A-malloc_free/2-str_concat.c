@@ -34,30 +34,32 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	int hold;
 	char *container;
+	int i;
 
 	hold = (_strlen(s1) + _strlen(s2) + 1);
 	ptr = malloc(sizeof(char) * hold);
 	container = ptr;
 	if (ptr == NULL)
 		return (NULL);
+	i = 0;
 	if (s1 != NULL)
 	{
 		while (*s1 != '\0')
 		{
-			*ptr = *s1;
+			ptr[i] = *s1;
 			s1++;
-			ptr++;
+			i++;
 		}
 	}
 	if (s2 != NULL)
 	{
 		while (*s2 != '\0')
 		{
-			*ptr = *s2;
+			ptr[i] = *s2;
 			s2++;
-			ptr++;
+			i++;
 		}
 	}
-	*ptr = '\0';
+	ptr[i] = '\0';
 	return (container);
 }
