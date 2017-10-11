@@ -33,12 +33,10 @@ char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
 	int hold;
-	char *container;
 	int i;
 
 	hold = (_strlen(s1) + _strlen(s2) + 1);
 	ptr = malloc(sizeof(char) * hold);
-	container = ptr;
 	if (ptr == NULL)
 		return (NULL);
 	i = 0;
@@ -61,5 +59,5 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 	ptr[i] = '\0';
-	return (container);
+	return (ptr);
 }
