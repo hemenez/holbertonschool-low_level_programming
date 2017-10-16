@@ -1,0 +1,1 @@
+This project is centered around the pre-processing stage in the C programming language.
