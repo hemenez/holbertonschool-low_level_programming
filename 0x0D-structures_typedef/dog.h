@@ -6,6 +6,7 @@
  * @age: second member
  * @owner: third member
  */
+typedef struct dog dog_t;
 
 struct dog
 {
