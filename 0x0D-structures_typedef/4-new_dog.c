@@ -30,16 +30,14 @@ int _strlen(char *s)
 char *_strcpy(char *dest, char *src)
 {
 	int a;
-	int b;
 
 	a = 0;
-	b = 0;
 	while (src[a] != '\0')
 	{
-		dest[b] = src[a];
+		dest[a] = src[a];
 		a++;
-		b++;
 	}
+	dest[a] = '\0';
 	return (dest);
 }
 
