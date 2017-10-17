@@ -1,0 +1,1 @@
+This project is about data structures in the C programming language.
