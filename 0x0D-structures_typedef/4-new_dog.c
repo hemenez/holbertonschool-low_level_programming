@@ -63,14 +63,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(doggie);
 		return (NULL);
 	}
-	copy1 = malloc(_strlen(name) + 1);
+	copy1 = malloc(_strlen(name) + 1 * sizeof(char));
 	if (copy1 == NULL)
 	{
 		free(doggie);
 		free(copy1);
 		return (NULL);
 	}
-	copy2 = malloc(_strlen(owner) + 1);
+	copy2 = malloc(_strlen(owner) + 1 * sizeof(char));
 	if (copy2 == NULL)
 	{
 		free(doggie);
