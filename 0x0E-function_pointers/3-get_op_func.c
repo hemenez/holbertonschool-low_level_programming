@@ -5,8 +5,6 @@
 /**
  * get_op_func - function selects correct function to perform op
  * @s: represents operator passed from main
- * @a: represents first argument to be operated
- * @b: represetns second argument to be operated
  * Return: function will return calculation
  */
 
