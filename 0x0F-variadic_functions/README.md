@@ -1,0 +1,1 @@
+This project is about variadic functions in the C programming language.
