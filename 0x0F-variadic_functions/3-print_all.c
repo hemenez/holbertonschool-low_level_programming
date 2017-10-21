@@ -9,7 +9,7 @@
 
 void char_print(va_list param)
 {
-	printf("%c", va_arg(param, int) + 0);
+	printf("%c", va_arg(param, int));
 }
 /**
  * int_print - function will print an int
