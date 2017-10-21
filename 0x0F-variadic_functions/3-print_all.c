@@ -76,7 +76,8 @@ void print_all(const char * const format, ...)
 			if (format[j] == *(in[i].given))
 			{
 				(in[i].f)(param);
-				printf(", ");
+				if ((format[j + 1]) != '\0')
+					printf(", ");
 			}
 			i++;
 		}
