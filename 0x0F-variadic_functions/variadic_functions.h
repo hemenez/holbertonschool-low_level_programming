@@ -10,16 +10,16 @@
 typedef struct op
 {
 	char *given;
-	void (*f)(void);
+	void (*f)(va_list);
 } mover;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
-void string_print(void);
-void char_print(void);
-void int_print(void);
-void float_print(void);
+void string_print(va_list);
+void char_print(va_list);
+void int_print(va_list);
+void float_print(va_list);
 
 #endif
