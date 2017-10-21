@@ -43,9 +43,11 @@ void string_print(va_list param)
 
 	a = va_arg(param, char *);
 	if (a == NULL)
+	{
 		printf("(nil)");
-	else
-		printf("%s", a);
+		return;
+	}
+	printf("%s", a);
 }
 /**
  * print_all - function will print everything
