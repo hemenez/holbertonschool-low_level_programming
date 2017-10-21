@@ -84,6 +84,6 @@ void print_all(const char * const format, ...)
 		}
 		j++;
 	}
-	va_end(param);
 	printf("\n");
+	va_end(param);
 }
