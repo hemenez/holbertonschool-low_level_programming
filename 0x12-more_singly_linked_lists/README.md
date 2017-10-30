@@ -1,0 +1,1 @@
+This project is about a continuation of singley linked lists in the C programming language.
