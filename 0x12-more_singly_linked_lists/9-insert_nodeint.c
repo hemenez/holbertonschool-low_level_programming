@@ -25,9 +25,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		(*head) = buff;
 		return (buff);
 	}
-	buff2 = *head;
+	buff2 = (*head);
 	x = 0;
-	while (x <= (idx - 2))
+	while (x < (idx - 1))
 	{
 		if (buff2 == NULL)
 		{
