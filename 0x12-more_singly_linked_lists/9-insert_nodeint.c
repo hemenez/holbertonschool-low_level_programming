@@ -13,7 +13,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *buff2; /** buffer node */
 	unsigned int x;
 
-	if ((*head) == NULL)
+	if (head == NULL)
 		return (NULL);
 	buff = malloc(sizeof(listint_t));
 	if (buff == NULL)
