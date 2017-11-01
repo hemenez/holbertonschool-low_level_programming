@@ -29,7 +29,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		buff2 = buff2->next;
 		x++;
 	}
-	if (buff == NULL)
+	if (buff == NULL || buff2 == NULL)
 		return (-1);
 	buff->next = buff2->next;
 	free(buff2);
