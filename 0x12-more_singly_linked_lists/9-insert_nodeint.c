@@ -13,6 +13,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *buff2; /** buffer node */
 	unsigned int x;
 
+	if ((*head) == NULL)
+		return (NULL);
 	buff = malloc(sizeof(listint_t));
 	if (buff == NULL)
 		return (NULL);
@@ -28,6 +30,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	x = 0;
 	while (x <= (idx - 2))
 	{
+		if (buff2 == NULL)
+		{
+			free(buff);
+			return (NULL);
+		}
 		buff2 = buff2->next;
 		x++;
 	}
