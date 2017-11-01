@@ -12,10 +12,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *buff;
 	listint_t *buff2;
 
-	if ((*head) == NULL && head == NULL)
+	if ((*head) == NULL)
 		return (-1);
-	buff = *head;
-	if (index == 0 && (*head) != NULL)
+	buff = (*head);
+	if (index == 0)
 	{
 		(*head) = buff->next;
 		free(buff);
