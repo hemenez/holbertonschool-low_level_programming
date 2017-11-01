@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
+ * delete_nodeint_at_index - function will delete node at given index
+ * @head: represents pointer to pointer to function
+ * @index: represents index to be referenced
+ * Return: returns 1 upon success, -1 if not
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -17,11 +17,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	buff = *head;
 	if (index == 0)
 	{
-		(*head) = buff->next;
+		(*head) = NULL;
 		free(buff);
 		return (1);
 	}
-	buff2 = buff->next;
 	x = 0;
 	while (x < (index - 1) && buff != NULL)
 	{
@@ -34,11 +33,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		{
 			free(buff);
 			return (-1);
+
 		}
 		buff = (*head);
 		(*head) = buff->next;
 		x++;
 	}
+	buff2 = buff->next;
 	buff->next = buff2->next;
 	free(buff2);
 	return (1);
