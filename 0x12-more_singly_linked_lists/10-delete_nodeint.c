@@ -21,17 +21,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(buff);
 		return (1);
 	}
+	buff2 = buff->next;
 	x = 0;
 	while (x < (index - 1) && buff != NULL)
 	{
 		if (buff == NULL)
 		{
 			return (-1);
-		}
-		if (buff2 == NULL)
-		{
-			return (-1);
-
 		}
 		buff = buff->next;
 		buff2 = buff->next;
