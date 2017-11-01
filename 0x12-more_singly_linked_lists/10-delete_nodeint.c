@@ -14,11 +14,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (head == NULL)
 		return (-1);
-	buff = malloc(sizeof(listint_t));
-	if (buff == NULL)
-	{
-		return (-1);
-	}
+	buff = *head;
 	if (index == 0)
 	{
 		(*head) = buff->next;
@@ -29,7 +25,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	x = 0;
 	while (x < (index - 1) && buff != NULL)
 	{
-		if (buff2 == NULL)
+		if (buff == NULL)
 		{
 			free(buff);
 			return (-1);
