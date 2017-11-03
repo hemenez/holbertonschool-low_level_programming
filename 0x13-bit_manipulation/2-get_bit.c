@@ -10,8 +10,8 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int spot;
 
-	if (!index && index != 0) /** if index does not exist */
+	if (index > 63)
 		return (-1);
-	spot = n >> index; /** moves to specified index */
+	spot = n >> index;
 	return (spot & 1);
 }
