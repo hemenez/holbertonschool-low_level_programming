@@ -13,16 +13,14 @@
 int main(int argc, char **argv)
 {
 	int fd_from, fd_to, readthrough, written;
-	char *buf;
-	char *file_from;
-	char *file_to;
+	char *buf; char *file_from; char *file_to;
 
 	file_from = argv[1];
 	file_to = argv[2];
 
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	fd_from = open(file_from, O_RDONLY);
@@ -58,12 +56,13 @@ void printerror(int x, char *argv)
 {
 	if (x == 98)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", argv);
+		dprintf(STDERR_FILENO, "Error: Can't read from");
+		dprintf(STDERR_FILENO, "file %s\n", argv);
 		exit(98);
 	}
 	if (x == 99)
 	{
-		dprintf(2, "Error: Can't write to %s\n", argv);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv);
 		exit(99);
 	}
 }
@@ -78,7 +77,7 @@ void closeerror(int x, int fd_val)
 {
 	if (x == 100)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fd_val);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_val);
 		exit(100);
 	}
 }
