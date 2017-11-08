@@ -56,7 +56,7 @@ void printerror(int x, char *argv)
 {
 	if (x == 98)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from");
+		dprintf(STDERR_FILENO, "Error: Can't read from ");
 		dprintf(STDERR_FILENO, "file %s\n", argv);
 		exit(98);
 	}
