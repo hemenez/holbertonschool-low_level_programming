@@ -1,0 +1,1 @@
+This project is about implementing doubly linked lists in the C language. 
