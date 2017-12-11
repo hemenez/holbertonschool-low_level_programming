@@ -1,0 +1,1 @@
+This project is about creating dynamic libraries in the C programming language.
