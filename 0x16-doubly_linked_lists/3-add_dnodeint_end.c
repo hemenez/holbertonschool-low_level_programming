@@ -30,8 +30,9 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 			new->prev = mover;
 			mover->next = new;
 			new->next = NULL;
+			return (new);
 		}
 		mover = mover->next;
 	}
-	return (new);
+	return (NULL);
 }
