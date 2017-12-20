@@ -1,0 +1,1 @@
+This project is a continuation of pointers, arrays, and strings in C.

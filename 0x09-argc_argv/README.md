@@ -1,0 +1,1 @@
+This project is going to be using argc and argv in the C programming language.

@@ -1,8 +1,1 @@
-# holbertonschool-low_level_programming
-# printf
-# simple_shell
-# simple_shell
-# monty
-# monty
-# monty
-# monty
+This project is about low-level programming, specifically in the language C.

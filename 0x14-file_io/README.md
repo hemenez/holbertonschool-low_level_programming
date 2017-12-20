@@ -1,0 +1,1 @@
+This project is about using system calls for input and output redirection in C.

@@ -1,0 +1,1 @@
+This project is about pointers to functions in the C programming language.

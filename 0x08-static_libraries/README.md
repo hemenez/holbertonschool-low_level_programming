@@ -1,0 +1,1 @@
+This project is about creating our own static libraries in C.

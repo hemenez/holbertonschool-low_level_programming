@@ -1,0 +1,1 @@
+This project begins the curriculum that includes pointers in C.

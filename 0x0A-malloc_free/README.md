@@ -1,0 +1,1 @@
+This project is about memory allocation in the C programming language.

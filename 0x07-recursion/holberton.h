@@ -1,0 +1,15 @@
+#ifndef HOBLERTON_H_
+#define HOLBERTON_H_
+
+int _putchar(char n);
+void _puts_recursion(char *s);
+void _print_rev_recursion(char *s);
+int _strlen_recursion(char *);
+int factorial(int n);
+int _pow_recursion(int x, int y);
+int _sqrt_recursion(int n);
+int is_prime_number(int n);
+int is_palindrome(char *);
+
+#endif
+#define NULL ((char *)0)
