@@ -1,9 +1,10 @@
 #include "hash_tables.h"
 #include <string.h>
 /**
- *
- *
- *
+ * hash_table_get - function retrieves value associated w key
+ * @ht: represents hash table to evaluate
+ * @key: represents key used to retrieve value
+ * Return: function returns value of element
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
