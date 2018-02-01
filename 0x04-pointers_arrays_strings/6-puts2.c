@@ -6,14 +6,10 @@
 
 void puts2(char *str)
 {
-	int length;
-
-	length = 0;
 	while (*str != '\0')
 	{
 		_putchar(*str);
 		str += 2;
-		length++;
 	}
 	_putchar('\n');
 }
