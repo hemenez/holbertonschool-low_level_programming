@@ -1,3 +1,6 @@
 [submodule "0x18-stacks_queues_lifo_fifo/monty"]
 	path = 0x18-stacks_queues_lifo_fifo/monty
 	url = https://github.com/hemenez/monty
+[submodule "0x1A-sorting_algorithms/sorting_algos_big_O"]
+	path = 0x1A-sorting_algorithms/sorting_algos_big_O
+	url = https://github.com/hemenez/sorting_algos_big_O
