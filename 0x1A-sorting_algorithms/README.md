@@ -1,0 +1,1 @@
+This project is about implementing sorting algorithms in C.
