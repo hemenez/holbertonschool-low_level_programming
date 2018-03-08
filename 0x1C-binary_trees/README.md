@@ -1,0 +1,1 @@
+This project is about binary trees and working with them in the C programming language. 
