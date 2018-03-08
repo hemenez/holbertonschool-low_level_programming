@@ -10,8 +10,6 @@ size_t helper_function(const binary_tree_t *tree)
 	size_t count_left;
 	size_t count_right;
 
-	if (tree == NULL)
-		return (0);
 	count_left = helper_function(tree->left);
 	count_right = helper_function(tree->right);
 	if (count_left > count_right)
@@ -30,6 +28,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t height;
 
+	if (tree == NULL)
+		return (0);
 	height = helper_function(tree);
 	return (height - 1);
 }
