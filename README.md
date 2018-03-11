@@ -6,7 +6,7 @@ This repository holds all work done with the C programming language while attend
 ## Repository Contents
 This repository contains the following folders. Please note, the description of each folder is meant to be generalized, and may hold more content pertaining to separate topics aside from those listed in the description. 
 
-| **File** | **Description** |
+| **Folder** | **Description** |
 | -------- | --------------- |
 | 0x00-hell_world | Introduction to the C language |
 | 0x01-variables_if_else_while | Introduction to loops and conditions |
