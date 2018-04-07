@@ -10,6 +10,7 @@ This project is a more in-depth look at loops, nested loops, and functions in C
 * All of our files should end with a new line
 * A `README.md` at the root of the folder of the project is mandatory
 * No more than 5 functions per file
+* Use Holberton's version of [_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
 * All our header files should be guarded
 * Not allowed to use global variables
 * Not allowed to use the standard use (functions ike `printf`, `puts`, etc.
