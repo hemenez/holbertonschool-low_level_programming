@@ -54,7 +54,7 @@ Write a function that searches for an integer.
 * If no element matches, return `-1`
 * If size <= `0`, return `-1`
 
-### Using Variadic Functions
+### Creating a larger-scale implementation
 
 #### 3-calc.h
 
